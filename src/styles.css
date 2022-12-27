@@ -1,0 +1,71 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: cornsilk;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+  text-shadow: -3px 3px 10px rgb(72, 151, 175);
+}
+h2 {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+.main_temp {
+  font-size: 3em;
+  font-weight: 500;
+  text-shadow: -3px 3px 10px rgb(0, 0, 0);
+}
+.fa-cloud {
+  font-size: 3.5em;
+  float: center;
+  z-index: -1;
+}
+.fa-sun {
+  font-size: 3em;
+  color: #ffe168;
+}
+.fa-magnifying-glass {
+  float: right;
+}
+.container {
+  background-color: rgba(248, 248, 248, 0.075);
+}
+.container-fluid {
+  background-color: transparent;
+}
+.cent {
+  text-align: right;
+}
+#myVideo {
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.card {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.temperature {
+  text-align: center;
+}
+.nav-link {
+  font-weight: 600;
+  color: white !important;
+}
+.active {
+  background-color: blue !important;
+  color: white !important;
+}
+.daily-icon {
+  font-size: 2em;
+  position: absolute;
+  z-index: 1;
+  margin-right: 50px;
+}
