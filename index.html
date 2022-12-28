@@ -30,29 +30,62 @@
   <body>
     <div class="container p-5 mt-5 mb-5 rounded card">
       <div class="container-fluid row py-3 mb-5">
-        <div class="col-6">
-          <h1 id="cityName">Enugu, NG</h1>
-          <p class="date mt-0 pt-0"> </p>
-          
-        </div>
-        <div class="col-6">
-          <form id="search">
-            <input type="text" id="search-input" class="form-control" placeholder="Search city" aria-label="Example text with button addon" aria-describedby="button-addon1">
-          <input type="submit" value="Submit">
-          </form>
-    </div>
+        <form id="search">
           <div class="row">
-            <div class="col">
-                <p>
-                 <i class="fa-solid fa-sun"></i><br />
-                    Sunny
-                  </p>
-            </div>
-            <div class="col cent">
-              <p><span id="tempValue"></span> <a href="#" id="celcius">&deg;C </a>|<a href="#" id="fHeight"><span class="frenhight">&deg;F</span></a></p>
-            </div>
+            <div class="col-6">
+            <input type="search"
+            placeholder="Type a city.."
+            autofocus="on"
+            class="form-control shadow-sm"
+            autocomplete="off" 
+            id="search-input" >
+          </div>
+          <div class="col-3">
+          <input class="btn btn-primary w-100" type="submit" value="Submit">
+          </div>
+          <div class="col-3">
+            <button id="currentCity" class="btn btn-light w-100">Current City</button>
           </div>
         </div>
+      </form>
+        <div class="row">
+        
+          <h1 id="cityName"></h1>
+          <p class="date mt-0 pt-0"> </p>
+        </div>
+    
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="tempValue" id="tempValue"></span
+                ><span class="units">°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Description: <span id="weather-description"><i  class="fa-solid fa-sun"></i><br />
+                Sunny</span></li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+          <!-- <div class="row">
+            
+            <div class="col-3 w-100">
+              <p><span id="tempValue"></span> <a href="#" id="celcius">&deg;C </a>|<a href="#" id="fHeight"><span class="frenhight">&deg;F</span></a></p>
+            </div>
+          
+          <div class="col-3 w-100">
+            <p id="weather-description">
+             <i  class="fa-solid fa-sun"></i><br />
+                Sunny
+              </p>
+          </div>
+        </div> -->
     
       <div class="container-fluid row">
         <ul class="nav nav-tabs">
