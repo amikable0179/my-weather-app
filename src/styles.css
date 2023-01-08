@@ -18,9 +18,10 @@ h2 {
   text-shadow: -3px 3px 10px rgb(0, 0, 0);
 }
 .fa-cloud {
-  font-size: 3.5em;
+  font-size: 2.5em;
   float: center;
-  z-index: -1;
+  text-align: center;
+  display: block;
 }
 .fa-sun {
   font-size: 3em;
@@ -55,14 +56,7 @@ h2 {
 .temperature {
   text-align: center;
 }
-.nav-link {
-  font-weight: 600;
-  color: white !important;
-}
-.active {
-  background-color: blue !important;
-  color: white !important;
-}
+
 .daily-icon {
   font-size: 2em;
   position: absolute;
@@ -92,4 +86,10 @@ li {
   height: 19px;
   line-height: 1;
   list-style: none;
+}
+
+.daily {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
 }
