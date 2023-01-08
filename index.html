@@ -21,90 +21,93 @@
 </head>
 
 <body>
-  <div class="container p-5 mt-5 mb-5 rounded card">
-    <div class="container-fluid row py-3 mb-5">
-      <form id="search">
-        <div class="row">
-          <div class="col-6">
-            <input type="search" placeholder="Type a city.." autofocus="on" class="form-control shadow-sm"
-              autocomplete="off" id="search-input">
-          </div>
-          <div class="col-3">
-            <input class="btn btn-primary w-100" type="submit" value="Submit">
-          </div>
-          <div class="col-3">
-            <button id="currentCity" class="btn btn-light w-100">Current City</button>
-          </div>
-        </div>
-      </form>
-      <div class="row">
-
-        <h1 id="cityName"></h1>
-        <p class="date mt-0 pt-0"> </p>
-      </div>
-
-      <div class="row">
-        <div class="col-6">
-          <div class="clearfix">
-            <div class="float-left">
-              <img src="" alt="" id="weather-icon">
-              <span class="tempValue" id="tempValue"></span><span class="units">°C</span>
+  <div>
+    <div class="container p-5 mt-5 mb-5 rounded card">
+      <div class="container-fluid row py-3">
+        <form id="search" class="mb-3">
+          <div class="row">
+            <div class="col-6">
+              <input type="search" placeholder="Type a city.." autofocus="on" class="form-control shadow-sm"
+                autocomplete="off" id="search-input">
+            </div>
+            <div class="col-3">
+              <input class="btn btn-primary w-100" type="submit" value="Submit">
+            </div>
+            <div class="col-3">
+              <button id="currentCity" class="btn btn-light w-100">Current City</button>
             </div>
           </div>
+        </form>
+        <div class="row">
+
+          <h1 id="cityName"></h1>
+          <p class="date mt-0 pt-0"> </p>
         </div>
-        <div class="col-6">
-          <ul>
-            <li>Description: <span id="weather-description"><i class="fa-solid fa-sun"></i><br />
-                Sunny</span></li>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> km/h</li>
-          </ul>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <img src="" alt="" id="weather-icon">
+                <span class="tempValue" id="tempValue"></span><span class="units">°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Description: <span id="weather-description"><i class="fa-solid fa-sun"></i><br />
+                  Sunny</span></li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid row">
+        <div class="box-daily row ">
+          <h3>Daily</h3>
+        </div>
+        <div class="row">
+          <div class="col card  daily">
+            <h2>Sunday</h2>
+            <i class="fa-solid fa-cloud">
+
+            </i><br />
+            <p class="temperature">36&deg;</p>
+          </div>
+          <div class="col card  daily">
+            <h2>Monday</h2>
+            <i class="fa-solid fa-cloud"></i><br />
+            <p class="temperature">36&deg;</p>
+          </div>
+          <div class="col card  daily">
+            <h2>Tuesday</h2>
+            <i class="fa-solid fa-cloud"></i><br />
+            <p class="temperature">36&deg;</p>
+          </div>
+          <div class="col card  daily">
+            <h2>Wednesday</h2>
+            <i class="fa-solid fa-cloud"></i><br />
+            <p class="temperature">36&deg;</p>
+          </div>
+          <div class="col card  daily">
+            <h2>Thursday</h2>
+            <i class="fa-solid fa-cloud"></i><br />
+            <p class="temperature">36&deg;</p>
+          </div>
+          <div class="col card  daily">
+            <h2>Friday</h2>
+            <i class="fa-solid fa-cloud"></i><br />
+            <p class="temperature">36&deg;</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid row">
-      <div class="box-daily row ">
-        <h3>Daily</h3>
-      </div>
-      <div class="row">
-        <div class="col card  daily">
-          <h2>Sunday</h2>
-          <i class="fa-solid fa-cloud">
-
-          </i><br />
-          <p class="temperature">36&deg;</p>
-        </div>
-        <div class="col card  daily">
-          <h2>Monday</h2>
-          <i class="fa-solid fa-cloud"></i><br />
-          <p class="temperature">36&deg;</p>
-        </div>
-        <div class="col card  daily">
-          <h2>Tuesday</h2>
-          <i class="fa-solid fa-cloud"></i><br />
-          <p class="temperature">36&deg;</p>
-        </div>
-        <div class="col card  daily">
-          <h2>Wednesday</h2>
-          <i class="fa-solid fa-cloud"></i><br />
-          <p class="temperature">36&deg;</p>
-        </div>
-        <div class="col card  daily">
-          <h2>Thursday</h2>
-          <i class="fa-solid fa-cloud"></i><br />
-          <p class="temperature">36&deg;</p>
-        </div>
-        <div class="col card  daily">
-          <h2>Friday</h2>
-          <i class="fa-solid fa-cloud"></i><br />
-          <p class="temperature">36&deg;</p>
-        </div>
-      </div>
-    </div>
   </div>
   <small>
-    <a href="https://github.com/amikable0179/my-weather-app" target="_blank">Open-source code</a>
+    <a href="https://github.com/amikable0179/my-weather-app" rel="noopener" target="_blank">Open-source code</a>
     by Ogbu Amarachukwu
   </small>
   </div>

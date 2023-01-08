@@ -93,3 +93,7 @@ li {
   margin: 0 auto;
   background-color: transparent;
 }
+
+small {
+  margin-left: 40px;
+}
