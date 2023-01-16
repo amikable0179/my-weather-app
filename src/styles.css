@@ -2,6 +2,12 @@ body {
   font-family: "Lato", sans-serif;
   color: cornsilk;
 }
+
+.weather-app-wrapper {
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: transparent;
+}
 h1 {
   font-size: 2em;
   font-weight: 800;
@@ -11,6 +17,9 @@ h2 {
   font-size: 1em;
   font-weight: 600;
   text-align: center;
+}
+#weather-description:first-letter {
+  text-transform: capitalize;
 }
 .main_temp {
   font-size: 3em;
@@ -57,12 +66,6 @@ h2 {
   text-align: center;
 }
 
-.daily-icon {
-  font-size: 2em;
-  position: absolute;
-  z-index: 1;
-  margin-right: 50px;
-}
 #tempValue {
   color: rgb(255, 255, 255);
   font-size: 64px;
@@ -87,13 +90,46 @@ li {
   line-height: 1;
   list-style: none;
 }
-
-.daily {
-  display: block;
-  margin: 0 auto;
-  background-color: transparent;
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(236, 229, 229);
+}
+.weather-forecast-day {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-image {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+.weather-temperature {
+  position: relative;
+  font-size: 13px;
+}
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
 }
 
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.temp-minimum {
+  opacity: 0.5;
+  margin: 2px;
+}
 small {
   margin-left: 40px;
+}
+.daily {
+  background-color: rgba(9, 55, 73, 0.062);
 }
